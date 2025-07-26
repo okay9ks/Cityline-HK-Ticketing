@@ -2,6 +2,10 @@ url = '' #Insert URL of concert site (e.g. https://www.cityline.com.hk/Login.htm
 email = '' #Replace with your member email address
 password '' #Replace with your member password
 
-lgbtn = document.getElementByClassName("login-btn theme-btn submit-btn ant-btn");
+from bs4 import BeautifulSoup
+with open(url) as fp:
+  page = BeautifulSoup(fp)
+
+page.find();
 
 
